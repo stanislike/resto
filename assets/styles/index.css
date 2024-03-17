@@ -15,11 +15,13 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: whitesmoke;
+  color: #eee;
 }
 
 body {
   text-align: center;
+  font-family: Roboto, sans-serif;
+  background: #21201e;
 }
 
 li {
@@ -27,15 +29,51 @@ li {
 }
 
 header {
-  height: 100vh;
   background: url(../img/bg-slider-06.jpg) center/cover;
+}
+header nav {
+  height: 12vh;
+  display: grid;
+  grid-template-columns: 12% 80% 8%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+}
+header nav .logo {
+  font-family: Allura, cursive;
+  font-weight: 100;
+  font-size: 2rem;
+}
+header nav .nav-elements {
+  max-width: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+header nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+}
+header .header-text {
+  height: 88vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -43,26 +81,30 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-header nav {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+header .header-text div {
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
 }
-header nav h2 {
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-header h2 {
-  font-family: Allura, serif;
-  font-weight: 300;
+header .header-text div h2 {
+  font-family: Allura, cursive;
   font-size: 3rem;
+  font-weight: 100;
+  color: rgb(166, 114, 69);
+  margin: -40px;
 }
-header h1 {
-  font-family: Poppins, sans-serif;
-  font-size: 4rem;
+header .header-text div h1 {
+  font-family: Poppins, serif;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
+  font-size: 4rem;
+  font-weight: 600;
+}
+header .header-text div img {
+  height: 30px;
+  margin: 50px 0;
+}
+header .header-text div p {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=index.css.map */
