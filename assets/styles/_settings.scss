@@ -1,16 +1,16 @@
 @font-face {
-    font-family: Allura;
-    src: url(../fonts/Allura-Regular.ttf);
+  font-family: Allura;
+  src: url(../fonts/Allura-Regular.ttf);
 }
 
 @font-face {
-    font-family: Poppins;
-    src: url(../fonts/Poppins-Medium.ttf);
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Medium.ttf);
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url(../fonts/Roboto-Light.ttf);
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Light.ttf);
 }
 
 $font1: Allura, cursive;
@@ -19,32 +19,38 @@ $font3: Roboto, sans-serif;
 
 $white: #eee;
 $black: #21201e;
-$grey: rgb(182,182,182);
-$color1: rgb(166,114,69);
+$grey: rgb(182, 182, 182);
+$color1: rgb(166, 114, 69);
 
 @mixin childCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin alignChildren($space) {
-    display: flex;
-    justify-content: $space;
-    align-items: center;
+  display: flex;
+  justify-content: $space;
+  align-items: center;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: $white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $white;
 }
 body {
-    text-align: center;
-    font-family: $font3;
-    background: $black;
+  text-align: center;
+  font-family: $font3;
+  background: $black;
 }
 li {
-    list-style: none;
+  list-style: none;
+}
+h3 {
+  font-family: $font1;
+  font-weight: 100;
+  font-size: 2rem;
+  color: $color1;
 }

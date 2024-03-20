@@ -28,6 +28,13 @@ li {
   list-style: none;
 }
 
+h3 {
+  font-family: Allura, cursive;
+  font-weight: 100;
+  font-size: 2rem;
+  color: rgb(166, 114, 69);
+}
+
 header {
   background: url(../img/bg-slider-06.jpg) center/cover;
 }
@@ -173,12 +180,6 @@ header .header-text div p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.section-1 .discover-store .container h3 {
-  font-family: Allura, cursive;
-  font-weight: 100;
-  font-size: 2rem;
-  color: rgb(166, 114, 69);
-}
 .section-1 .discover-store .container h2 {
   font-family: Poppins, serif;
   font-size: 1.2rem;
@@ -218,4 +219,114 @@ header .header-text div p {
 .section-1 .s1-img {
   width: 50%;
   background: url(../img/store-01.jpg) center/cover;
+}
+
+.section-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0 100px;
+}
+.section-2::after {
+  content: "";
+  height: 70vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  background: url(../img/bg-menu-01.jpg) center/cover;
+}
+.section-2 .container {
+  width: 50%;
+}
+.section-2 .container img {
+  margin: 25px 0;
+}
+.section-2 .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+.section-2 .container ul li {
+  position: relative;
+}
+.section-2 .container ul li::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 25px;
+  left: 0;
+  background: #eee;
+}
+.section-2 .container ul li:hover {
+  color: rgb(166, 114, 69);
+  cursor: pointer;
+  font-weight: bolder;
+}
+.section-2 .container ul li:hover::after {
+  background: rgb(166, 114, 69);
+}
+.section-2 .container .carte-menu {
+  height: 700px;
+  background: #eee;
+  border-top: 4px solid rgb(166, 114, 69);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 50px;
+  padding: 20px;
+}
+.section-2 .container .carte-menu .menu {
+  border-bottom: 1px dashed rgb(182, 182, 182);
+  display: grid;
+  grid-template-columns: 30% 55% 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-2 .container .carte-menu .menu .img-container {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.section-2 .container .carte-menu .menu .text-container {
+  padding-left: 10px;
+}
+.section-2 .container .carte-menu .menu .text-container h4 {
+  color: #21201e;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-align: left;
+}
+.section-2 .container .carte-menu .menu .text-container p {
+  margin-top: 10px;
+  color: #21201e;
+  text-align: left;
+}
+.section-2 .container .carte-menu .menu .price p {
+  color: rgb(166, 114, 69);
+  font-weight: 600;
 }/*# sourceMappingURL=index.css.map */

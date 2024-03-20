@@ -1,0 +1,100 @@
+.section-2 {
+  position: relative;
+  @include childCenter;
+  padding: 50px 0 100px;
+
+  &::after {
+    content: "";
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    background: url(../img/bg-menu-01.jpg) center/cover;
+  }
+
+  .container {
+    width: 50%;
+
+    img {
+      margin: 25px 0;
+    }
+
+    ul {
+      @include alignChildren(space-around);
+      margin-bottom: 35px;
+
+      li {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          width: 100%;
+          top: 25px;
+          left: 0;
+          background: $white;
+        }
+
+        &:hover {
+          color: $color1;
+          cursor: pointer;
+          font-weight: bolder;
+          &::after {
+            background: $color1;
+          }
+        }
+      }
+    }
+
+    .carte-menu {
+      height: 700px;
+      background: $white;
+      border-top: 4px solid $color1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 50px;
+      padding: 20px;
+
+      .menu {
+        border-bottom: 1px dashed $grey;
+        display: grid;
+        grid-template-columns: 30% 55% 15%;
+        align-items: center;
+        //@include alignChildren(space-between);
+
+        .img-container {
+          border-radius: 50%;
+          height: 100px;
+          width: 100px;
+          @include childCenter;
+          overflow: hidden;
+        }
+
+        .text-container {
+          padding-left: 10px;
+          h4 {
+            color: $black;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            text-align: left;
+          }
+
+          p {
+            margin-top: 10px;
+            color: $black;
+            text-align: left;
+          }
+        }
+
+        .price {
+          p {
+            color: $color1;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
