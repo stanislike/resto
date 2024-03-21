@@ -52,6 +52,9 @@ header nav .logo {
   font-weight: 100;
   font-size: 2rem;
 }
+header nav .logo h3 {
+  color: #eee;
+}
 header nav .logo h3:hover {
   cursor: pointer;
   color: rgb(166, 114, 69);
@@ -329,4 +332,37 @@ header .header-text div p {
 .section-2 .container .carte-menu .menu .price p {
   color: rgb(166, 114, 69);
   font-weight: 600;
+}
+
+.section-3 {
+  height: 88vh;
+  padding-top: 80px;
+}
+.section-3 .container {
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.section-3 .container .left {
+  background: black;
+  padding: 20px;
+}
+.section-3 .container .left .time {
+  height: 100%;
+  border: 1px dashed #eee;
+  padding: 15px 25px 20px;
+}
+.section-3 .container .right {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=index.css.map */

@@ -1,103 +1,102 @@
 header {
-    background: url(../img/bg-slider-06.jpg) center/cover;
+  background: url(../img/bg-slider-06.jpg) center/cover;
 
-    nav {
-        height: 12vh;
-        display: grid;
-        grid-template-columns: 12% 80% 8%;
-        align-items: center;
-        padding: 0 50px;
+  nav {
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 12% 80% 8%;
+    align-items: center;
+    padding: 0 50px;
 
-        .logo {
-            font-family: $font1;
-            font-weight: 100;
-            font-size: 2rem;
-            
-            h3 {
+    .logo {
+      font-family: $font1;
+      font-weight: 100;
+      font-size: 2rem;
 
-                &:hover {
-                    cursor: pointer;
-                    color: $color1;
-                }
-            }
+      h3 {
+        color: $white;
+
+        &:hover {
+          cursor: pointer;
+          color: $color1;
         }
-        .nav-elements {
-            @include alignChildren(space-around);
-            text-transform: uppercase;
-            font-size: 0.7rem;
-
-            li {
-                transition: 0.2s;
-                position: relative;
-                
-                &:hover {
-                    cursor: pointer;
-                    transform: scale(1.2);
-                    color: $color1;
-                    font-weight: 900;
-                    
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        height: 5px;
-                        width: 100%;
-                        top: 15px;
-                        left: 0;
-                        background: $color1;
-                    }
-                }
-            }
-        }
-        .nav-icons {
-            @include alignChildren(space-around);
-            font-size: 0.8rem;
-
-            i {
-                transition: 0.2s;
-                position: relative;
-                
-                &:hover {
-                    cursor: pointer;
-                    transform: scale(1.2);
-                    color: $color1;
-                    font-weight: 900;
-                }
-            }
-        }
+      }
     }
+    .nav-elements {
+      @include alignChildren(space-around);
+      text-transform: uppercase;
+      font-size: 0.7rem;
 
-    .header-text {
-        height: 88vh;
-        @include childCenter;
+      li {
+        transition: 0.2s;
+        position: relative;
 
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+          color: $color1;
+          font-weight: 900;
 
-        div {
-            transform: translateY(-70px);
-            
-            h2 {
-                font-family: $font1;
-                font-size: 3rem;
-                font-weight: 100;
-                color: $color1;
-                margin: -40px;
-            }
-            h1 {
-                font-family: $font2;
-                text-transform: uppercase;
-                letter-spacing: 10px;
-                font-size: 4rem;
-                font-weight: 600;
-            }
-            img {
-                height: 30px;
-                margin: 50px 0;
-            }
-            p {
-                text-transform: uppercase;
-                letter-spacing: 8px;
-                font-size: 0.8rem;
-            }
+          &::after {
+            content: "";
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            top: 15px;
+            left: 0;
+            background: $color1;
+          }
         }
-
+      }
     }
+    .nav-icons {
+      @include alignChildren(space-around);
+      font-size: 0.8rem;
+
+      i {
+        transition: 0.2s;
+        position: relative;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+          color: $color1;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+
+  .header-text {
+    height: 88vh;
+    @include childCenter;
+
+    div {
+      transform: translateY(-70px);
+
+      h2 {
+        font-family: $font1;
+        font-size: 3rem;
+        font-weight: 100;
+        color: $color1;
+        margin: -40px;
+      }
+      h1 {
+        font-family: $font2;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-size: 4rem;
+        font-weight: 600;
+      }
+      img {
+        height: 30px;
+        margin: 50px 0;
+      }
+      p {
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-size: 0.8rem;
+      }
+    }
+  }
 }
