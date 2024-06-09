@@ -37,20 +37,24 @@ h3 {
 
 header {
   background: url(../img/bg-slider-06.jpg) center/cover;
+  padding: 0 50px;
+  color: #eee;
 }
 header nav {
   height: 12vh;
   display: grid;
-  grid-template-columns: 12% 80% 8%;
+  grid-template-columns: 10% 82% 8%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 50px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 header nav .logo {
   font-family: Allura, cursive;
   font-weight: 100;
   font-size: 2rem;
+  text-align: left;
 }
 header nav .logo h3 {
   color: #eee;
@@ -70,6 +74,7 @@ header nav .nav-elements {
           align-items: center;
   text-transform: uppercase;
   font-size: 0.7rem;
+  padding: 0px 30px;
 }
 header nav .nav-elements li {
   -webkit-transition: 0.2s;
@@ -146,13 +151,14 @@ header .header-text div h1 {
   font-weight: 600;
 }
 header .header-text div img {
-  height: 30px;
+  height: 27px;
   margin: 50px 0;
 }
-header .header-text div p {
+header .header-text div h6 {
   text-transform: uppercase;
-  letter-spacing: 8px;
-  font-size: 0.8rem;
+  letter-spacing: 6px;
+  font-size: 0.75rem;
+  font-weight: 100;
 }
 
 .section-1 {
