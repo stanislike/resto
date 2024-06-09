@@ -365,4 +365,9 @@ header .header-text div p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.section-3 .container .right .reservation h2 {
+  color: #21201e;
+  text-transform: uppercase;
+  font-family: Poppins, serif;
 }/*# sourceMappingURL=index.css.map */
