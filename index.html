@@ -227,38 +227,53 @@
         <div class="left">
           <div class="time">
             <h3>Time</h3>
-            <h2>Open</h2>
+            <h4>Open</h4>
             <img src="./assets/img/ic-plate.png" alt="icon plate" />
-            <h4>Monday - Friday</h4>
-            <p>
-              7AM -11AM (Breakfast) <br />
-              11AM - 10PM (Lunch/Dinner)
-            </p>
-            <h4>Saturday / Sunday</h4>
-            <p>
-              AM -1PM (Brunch) <br />
-              1PM - 9PM (Lunch/Dinner)
-            </p>
-            <h4>+15 890 979 25 52</h4>
+            <h5>Monday - Friday</h5>
+            <p>7AM -11AM (Breakfast)</p>
+            <p>11AM - 10PM (Lunch/Dinner)</p>
+            <h5>Saturday / Sunday</h5>
+            <p>8AM -1PM (Brunch)</p>
+            <p>1PM - 9PM (Lunch/Dinner)</p>
+            <h5>+15 890 979 25 52</h5>
           </div>
         </div>
         <div class="right">
           <div class="reservation">
-            <h3>Reservation</h3>
-            <h2>Online booking</h2>
+            <h2>Reservation</h2>
+            <h3>Online booking</h3>
             <img src="./assets/img/ic-plate.png" alt="icon plate" />
             <div class="form">
-              <select name="type-of-person">
-                <option value="people">People</option>
-                <option value="group">Group</option>
+              <select name="type-of-person" id="people">
+                <option value="">People</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
               </select>
-              <input type="date" />
-              <input type="time" />
-              <input type="text" name="Name" />
-              <input type="text" name="Phone" />
-              <input type="email" name="Email" />
-              <input type="submit" value="Book Now" />
+              <input
+                type="date"
+                id="booking-date"
+                name="booking-date"
+                value="2024-06-10"
+                min="2024-06-10"
+              />
+              <input
+                type="time"
+                id="booking-time"
+                name="booking-time"
+                min="07:00"
+                max="21:00"
+              />
+              <input type="text" name="Name" placeholder="Name" />
+              <input type="text" name="Phone" placeholder="Phone" />
+              <input type="email" name="Email" placeholder="Email" />
             </div>
+            <button>BOOK NOW</button>
           </div>
         </div>
       </div>

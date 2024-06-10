@@ -341,27 +341,52 @@ header .header-text div h6 {
 }
 
 .section-3 {
-  height: 88vh;
-  padding-top: 80px;
+  padding: 100px 15px 65px;
+  color: #eee;
 }
 .section-3 .container {
-  width: 70%;
-  height: 80%;
-  margin: auto;
   display: grid;
   grid-template-columns: 30% 70%;
+  background: #eee;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 .section-3 .container .left {
+  padding: 24px;
   background: black;
-  padding: 20px;
 }
 .section-3 .container .left .time {
-  height: 100%;
-  border: 1px dashed #eee;
-  padding: 15px 25px 20px;
+  border: 1px dashed grey;
+  padding: 20px 0;
 }
-.section-3 .container .right {
-  background: white;
+.section-3 .container .left .time h3 {
+  font-family: Allura, cursive;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: rgb(166, 114, 69);
+}
+.section-3 .container .left .time h4 {
+  text-transform: uppercase;
+  font-family: Poppins, serif;
+  margin-top: -16px;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+}
+.section-3 .container .left .time img {
+  margin-top: 25px;
+}
+.section-3 .container .left .time h5 {
+  text-transform: uppercase;
+  color: rgb(166, 114, 69);
+  font-family: Poppins, serif;
+  font-weight: 100;
+  font-size: 1.1rem;
+  margin: 38px 0 12px;
+}
+.section-3 .container .left .time p {
+  font-size: 0.85rem;
+}
+.section-3 .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,9 +396,54 @@ header .header-text div h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 30px 0;
 }
-.section-3 .container .right .reservation h2 {
-  color: #21201e;
+.section-3 .right h2 {
+  font-family: Allura, cursive;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: rgb(166, 114, 69);
+}
+.section-3 .right h3 {
   text-transform: uppercase;
+  color: black;
+  margin-top: -18px;
   font-family: Poppins, serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.section-3 .right img {
+  margin: 25px;
+  height: 25px;
+}
+.section-3 .right .form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 30px;
+}
+.section-3 .right .form > * {
+  padding: 10px 0;
+  margin: 10px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+.section-3 .right button {
+  border: none;
+  border-radius: 50px;
+  background: #21201e;
+  color: #eee;
+  padding: 16px 34px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.section-3 .right button:hover {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=index.css.map */
