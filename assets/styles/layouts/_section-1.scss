@@ -13,6 +13,13 @@
       @include alignChildren(center);
       flex-direction: column;
 
+      h3 {
+        font-family: $font1;
+        color: $color1;
+        font-weight: 100;
+        font-size: 2rem;
+      }
+
       h2 {
         font-family: $font2;
         font-size: 1.2rem;

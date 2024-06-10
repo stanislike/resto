@@ -38,7 +38,6 @@ $color1: rgb(166, 114, 69);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: $white;
 }
 body {
   text-align: center;
@@ -47,10 +46,4 @@ body {
 }
 li {
   list-style: none;
-}
-h3 {
-  font-family: $font1;
-  font-weight: 100;
-  font-size: 2rem;
-  color: $color1;
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: Allura;
   src: url(../fonts/Allura-Regular.ttf);
@@ -15,7 +16,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #eee;
 }
 
 body {
@@ -26,13 +26,6 @@ body {
 
 li {
   list-style: none;
-}
-
-h3 {
-  font-family: Allura, cursive;
-  font-weight: 100;
-  font-size: 2rem;
-  color: rgb(166, 114, 69);
 }
 
 header {
@@ -112,6 +105,7 @@ header nav .nav-icons i {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   position: relative;
+  color: #eee;
 }
 header nav .nav-icons i:hover {
   cursor: pointer;
@@ -189,6 +183,12 @@ header .header-text div h6 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.section-1 .discover-store .container h3 {
+  font-family: Allura, cursive;
+  color: rgb(166, 114, 69);
+  font-weight: 100;
+  font-size: 2rem;
+}
 .section-1 .discover-store .container h2 {
   font-family: Poppins, serif;
   font-size: 1.2rem;
@@ -255,6 +255,12 @@ header .header-text div h6 {
 .section-2 .container {
   width: 50%;
 }
+.section-2 .container h3 {
+  font-family: Allura, cursive;
+  color: rgb(166, 114, 69);
+  font-weight: 100;
+  font-size: 2rem;
+}
 .section-2 .container img {
   margin: 25px 0;
 }
@@ -271,6 +277,7 @@ header .header-text div h6 {
 }
 .section-2 .container ul li {
   position: relative;
+  color: #eee;
 }
 .section-2 .container ul li::after {
   content: "";
@@ -447,4 +454,193 @@ header .header-text div h6 {
           transform: translateX(3px);
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section-4 {
+  padding: 50px 20px 90px;
+}
+.section-4 .events-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.section-4 .events-container h2 {
+  font-size: 2.5rem;
+  color: rgb(166, 114, 69);
+  font-family: Allura, cursive;
+  font-weight: 100;
+}
+.section-4 .events-container h4 {
+  letter-spacing: 2px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #eee;
+  margin-top: -12px;
+  font-family: Poppins, serif;
+}
+.section-4 .events-container img {
+  margin: 30px 0;
+}
+.section-4 .events-container .event-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 58% 42%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a b" "c b";
+}
+.section-4 .events-container .event-container .date-content {
+  background: #21201e;
+  height: 86px;
+  width: 86px;
+  margin: 0 auto;
+  color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 22px;
+}
+.section-4 .events-container .event-container .date-content h6 {
+  font-size: 1.7rem;
+}
+.section-4 .events-container .event-container .adress {
+  background: #eee;
+}
+.section-4 .events-container .event-container .adress h3 {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-left: 8px;
+}
+.section-4 .events-container .event-container .adress p {
+  font-size: 0.9rem;
+  color: rgb(182, 182, 182);
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+.section-4 .events-container .event-container .adress p i {
+  color: rgb(182, 182, 182);
+  margin-right: 3px;
+  font-size: 0.7rem;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+.section-4 .events-container .event-container .adress p i:nth-child(2) {
+  margin-left: 10px;
+}
+.section-4 .events-container .event-container .adress h5 {
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.section-4 .events-container .event-container .event-left {
+  display: grid;
+  grid-template-columns: 39% 61%;
+  text-align: left;
+}
+.section-4 .events-container .event-container .event-left .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-4 .events-container .event-container .event-left .adress {
+  color: #21201e;
+  padding: 30px 20px;
+}
+.section-4 .events-container .event-container .event-1 {
+  grid-area: a;
+}
+.section-4 .events-container .event-container .event-1 .date {
+  background: url(../img/event-01.jpg) center/cover;
+}
+.section-4 .events-container .event-container .event-2 {
+  grid-area: c;
+}
+.section-4 .events-container .event-container .event-2 .date {
+  background: url(../img/event-02.jpg) center/cover;
+}
+.section-4 .events-container .event-container .event-3 {
+  grid-area: b;
+  background: url(../img/event-03.jpg) center/cover;
+  padding: 25px;
+}
+.section-4 .events-container .event-container .event-3 .adress {
+  height: 100%;
+  padding: 0 12px;
+}
+.section-4 .events-container .event-container .event-3 .adress h3 {
+  margin: 40px 0 15px;
+}
+.section-4 .events-container .event-container .event-3 .adress h5 {
+  padding: 45px 0;
+}
+
+.section-5 {
+  padding: 70px 0 230px;
+  position: relative;
+}
+.section-5::after {
+  content: "";
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  background: url(../img/gmap.jpg) center/cover;
+  left: 0;
+  bottom: 0;
+}
+.section-5 .quote-container {
+  background: #eee;
+  z-index: 3;
+  position: relative;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 65px 70px;
+  -webkit-box-shadow: 0 0 3px #333;
+          box-shadow: 0 0 3px #333;
+}
+.section-5 .quote-container::before {
+  content: "";
+  position: absolute;
+  background: url(../img/avatar-02.jpg) center/cover;
+  height: 60px;
+  width: 60px;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50px;
+}
+.section-5 .quote-container .text-container {
+  line-height: 30px;
+}
+.section-5 .quote-container .text-container::before {
+  content: "❝";
+}
+.section-5 .quote-container .text-container::after {
+  content: "❞";
+}
+.section-5 .quote-container .text-container::before, .section-5 .quote-container .text-container::after {
+  font-size: 1.5rem;
+}
+.section-5 .quote-container h2 {
+  margin: 30px 0 15px;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+}
+.section-5 .quote-container p {
+  color: rgb(166, 114, 69);
 }/*# sourceMappingURL=index.css.map */
