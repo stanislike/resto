@@ -43,6 +43,11 @@ header nav {
   max-width: 1100px;
   margin: 0 auto;
 }
+@media screen and (max-width: 680px) {
+  header nav {
+    grid-template-columns: 50% 10% 40%;
+  }
+}
 header nav .logo {
   font-family: Allura, cursive;
   font-weight: 100;
@@ -68,6 +73,11 @@ header nav .nav-elements {
   text-transform: uppercase;
   font-size: 0.7rem;
   padding: 0px 30px;
+}
+@media screen and (max-width: 680px) {
+  header nav .nav-elements {
+    visibility: hidden;
+  }
 }
 header nav .nav-elements li {
   -webkit-transition: 0.2s;
@@ -144,6 +154,14 @@ header .header-text div h1 {
   font-size: 4rem;
   font-weight: 600;
 }
+@media screen and (max-width: 680px) {
+  header .header-text div h1 {
+    font-size: 2rem;
+    margin-top: -15px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
 header .header-text div img {
   height: 27px;
   margin: 50px 0;
@@ -165,6 +183,11 @@ header .header-text div h6 {
 .section-1 .discover-store {
   width: 50%;
   padding: 15px;
+}
+@media screen and (max-width: 680px) {
+  .section-1 .discover-store {
+    width: 100%;
+  }
 }
 .section-1 .discover-store .container {
   border: 1px dashed rgb(166, 114, 69);
@@ -229,6 +252,11 @@ header .header-text div h6 {
   width: 50%;
   background: url(../img/store-01.jpg) center/cover;
 }
+@media screen and (max-width: 680px) {
+  .section-1 .s1-img {
+    display: none;
+  }
+}
 
 .section-2 {
   position: relative;
@@ -245,15 +273,17 @@ header .header-text div h6 {
 }
 .section-2::after {
   content: "";
-  height: 70vh;
+  height: 500px;
   width: 100%;
   position: absolute;
   z-index: -1;
+  left: 0;
   bottom: 0;
   background: url(../img/bg-menu-01.jpg) center/cover;
 }
 .section-2 .container {
-  width: 50%;
+  width: 85%;
+  max-width: 800px;
 }
 .section-2 .container h3 {
   font-family: Allura, cursive;
@@ -297,13 +327,17 @@ header .header-text div h6 {
   background: rgb(166, 114, 69);
 }
 .section-2 .container .carte-menu {
-  height: 700px;
   background: #eee;
   border-top: 4px solid rgb(166, 114, 69);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 50px;
   padding: 20px;
+}
+@media screen and (max-width: 680px) {
+  .section-2 .container .carte-menu {
+    grid-template-columns: 1fr;
+  }
 }
 .section-2 .container .carte-menu .menu {
   border-bottom: 1px dashed rgb(182, 182, 182);
@@ -357,6 +391,11 @@ header .header-text div h6 {
   background: #eee;
   max-width: 1050px;
   margin: 0 auto;
+}
+@media screen and (max-width: 900px) {
+  .section-3 .container {
+    grid-template-columns: 1fr;
+  }
 }
 .section-3 .container .left {
   padding: 24px;
@@ -428,6 +467,11 @@ header .header-text div h6 {
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 680px) {
+  .section-3 .right .form {
+    grid-template-columns: 1fr;
+  }
+}
 .section-3 .right .form > * {
   color: #21201e;
   padding: 10px 0;
@@ -458,6 +502,11 @@ header .header-text div h6 {
 
 .section-4 {
   padding: 50px 20px 90px;
+}
+@media screen and (max-width: 680px) {
+  .section-4 {
+    display: none;
+  }
 }
 .section-4 .events-container {
   max-width: 1000px;
@@ -651,15 +700,30 @@ footer {
   padding: 65px 32px;
   color: #eee;
 }
+@media screen and (max-width: 680px) {
+  footer {
+    background: none;
+  }
+}
 footer .footer-content {
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 50% 50%;
 }
+@media screen and (max-width: 680px) {
+  footer .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
 footer .footer-content .left-part {
   padding-right: 30px;
   line-height: 30px;
+}
+@media screen and (max-width: 680px) {
+  footer .footer-content .left-part {
+    display: none;
+  }
 }
 footer .footer-content .left-part h2 {
   font-family: Allura, cursive;
@@ -677,6 +741,11 @@ footer .footer-content .right-part {
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part {
+    padding-left: 20px;
+  }
+}
 footer .footer-content .right-part h3 {
   font-size: 0.85rem;
 }
@@ -687,11 +756,21 @@ footer .footer-content .right-part input {
   padding: 7px 13px;
   width: 250px;
 }
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part input {
+    width: 150px;
+  }
+}
 footer .footer-content .right-part .follow-us {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
+}
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part .follow-us h3 {
+    display: none;
+  }
 }
 footer .footer-content .right-part .follow-us ul {
   display: -webkit-box;

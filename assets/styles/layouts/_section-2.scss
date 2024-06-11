@@ -5,16 +5,18 @@
 
   &::after {
     content: "";
-    height: 70vh;
+    height: 500px;
     width: 100%;
     position: absolute;
     z-index: -1;
+    left: 0;
     bottom: 0;
     background: url(../img/bg-menu-01.jpg) center/cover;
   }
 
   .container {
-    width: 50%;
+    width: 85%;
+    max-width: 800px;
 
     h3 {
       font-family: $font1;
@@ -57,13 +59,17 @@
     }
 
     .carte-menu {
-      height: 700px;
+      //height: 700px;
       background: $white;
       border-top: 4px solid $color1;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0 50px;
       padding: 20px;
+
+      @media screen and (max-width: 680px) {
+        grid-template-columns: 1fr;
+      }
 
       .menu {
         border-bottom: 1px dashed $grey;

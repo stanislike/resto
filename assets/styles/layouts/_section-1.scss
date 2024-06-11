@@ -7,6 +7,10 @@
     width: 50%;
     padding: 15px;
 
+    @media screen and (max-width: 680px) {
+      width: 100%;
+    }
+
     .container {
       border: 1px dashed $color1;
       height: 100%;
@@ -63,5 +67,9 @@
   .s1-img {
     width: 50%;
     background: url(../img/store-01.jpg) center/cover;
+
+    @media screen and (max-width: 680px) {
+      display: none;
+    }
   }
 }
